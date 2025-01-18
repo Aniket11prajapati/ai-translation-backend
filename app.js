@@ -72,13 +72,14 @@ app.get('/translate', async (req, res) => {
         //First convert speech to text this will be done by aniket prajapati
         const speechText = await speechToText();
 
-        const textConversion = await askQuestionToAI();
-
+        //Second convert text to speech this will be done by yash gupta
         const textToSpeech = await textToSpeech();
-
+        
+        //Third give suggestions this will be done by zainul khan
+        const textConversion = await askQuestionToAI();
         return res.status(200).json({
             textConversion,
-            textToSpeech
+            textToSpeech 
         });
 
     } catch (error) {
