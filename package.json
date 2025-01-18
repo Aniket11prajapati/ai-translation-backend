@@ -1,0 +1,27 @@
+{
+  "name": "ai-translation-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a demo app for speech to text and text to speech practice",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cool",
+    "AI",
+    "tts",
+    "whisper"
+  ],
+  "author": "aniket prajapat, zainul khan, yash gupta",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-fileupload": "^1.5.1",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "openai": "^4.79.1"
+  }
+}
